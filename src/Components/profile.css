@@ -1,0 +1,12 @@
+.profile-div{
+    animation: animate 0.2s ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        scale:0;
+    }
+    100%{
+        scale:1;
+    }
+}
