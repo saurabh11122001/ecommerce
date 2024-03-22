@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/repository-name/static/css/main.b17eb28e.css",
+    "main.js": "/repository-name/static/js/main.72ac1b4e.js",
+    "static/js/787.866a9283.chunk.js": "/repository-name/static/js/787.866a9283.chunk.js",
+    "static/media/banner-03.jpg": "/repository-name/static/media/banner-03.f1347d60f977c5d1eb9d.jpg",
+    "static/media/banner-04.jpg": "/repository-name/static/media/banner-04.c0c86c1a794ca5f2f6a0.jpg",
+    "static/media/home-new-bg-free-img.jpg": "/repository-name/static/media/home-new-bg-free-img.676c4ece681c03f7607b.jpg",
+    "static/media/slide-image-free-img.jpg": "/repository-name/static/media/slide-image-free-img.1d1432035084146a3fc6.jpg",
+    "static/media/men-fashion-free-img.jpg": "/repository-name/static/media/men-fashion-free-img.3d2d17d5cc31bb45e4dd.jpg",
+    "static/media/women-fashion-free-img.jpg": "/repository-name/static/media/women-fashion-free-img.a70ab272a56accdab763.jpg",
+    "static/media/footwear-free-img.jpg": "/repository-name/static/media/footwear-free-img.792ea75bf476820fda49.jpg",
+    "static/media/product-bag1-300x300.jpg": "/repository-name/static/media/product-bag1-300x300.9c6d7b050e1955dcebc5.jpg",
+    "static/media/sports-shoe1-300x300.jpg": "/repository-name/static/media/sports-shoe1-300x300.a9e1992568ced3d3c0e9.jpg",
+    "static/media/sports-shoe3-300x300.jpg": "/repository-name/static/media/sports-shoe3-300x300.1fe6ec28c66099a92290.jpg",
+    "index.html": "/repository-name/index.html",
+    "main.b17eb28e.css.map": "/repository-name/static/css/main.b17eb28e.css.map",
+    "main.72ac1b4e.js.map": "/repository-name/static/js/main.72ac1b4e.js.map",
+    "787.866a9283.chunk.js.map": "/repository-name/static/js/787.866a9283.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b17eb28e.css",
+    "static/js/main.72ac1b4e.js"
+  ]
+}
