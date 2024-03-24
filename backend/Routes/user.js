@@ -24,12 +24,18 @@ router.post("/create",async(req,res)=>{
         username:req.body.username,
         email:req.body.email
     })
-    await userModel.register(data,req.body.password)
-    .then(function(registereduser){
-        passport.authenticate("local")(req,res,function(){
-            res.send({success:true,loggedIn:"LoggedIn",name:data.username});
+    try {
+        await userModel.register(data,req.body.password)
+        .then(function(registereduser){
+            passport.authenticate("local")(req,res,function(){
+                res.send({success:true,loggedIn:"LoggedIn",name:req.body.username});
+            })
         })
-    })
+        
+    } catch (error) {
+        res.send("user already exist");
+    }
+   
 })
 router.post("/login",passport.authenticate("local",{
 }),function(req,res){
