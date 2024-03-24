@@ -1,0 +1,15 @@
+.loader-div {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 5px solid #3498db; /* Loader color */
+    border-top-color: transparent;
+    animation: spin 1s linear infinite; /* Animation */
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

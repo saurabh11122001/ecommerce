@@ -7,17 +7,23 @@ import './App.css'
 import About from './Components/About';
 import LastPart from './Components/LastPart';
 import { AboutUs as About2 } from './Components/AboutUs';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import MyContext from './Context/Context';
 import Profile from './Components/Profile';
 import Login from './Components/Login';
 import Cart from './Components/Cart';
+import Loader from './Components/Loader';
 
 
 function App() {
 
   const context=useContext(MyContext)
-  let {AboutUs,profile,login,cart}=context;
+  let {AboutUs,profile,login,cart,loader,setLoader}=context;
+  useEffect(()=>{
+    setTimeout(()=>{
+        setLoader(false);
+    },2000)
+  },[loader])
   return (
     <>
       <div className="wrapper-div max-sm:w-screen max-sm:overscroll-y-auto max-sm:h-screen bg-black min-h-screen xl:w-screen ">
@@ -34,6 +40,7 @@ function App() {
             {profile?<Profile/>:''}
             {login?<Login/>:''}
             {cart?<Cart/>:''}
+            {loader?<Loader/>:''}
             <About />
             <LastPart/>
           </Router>
