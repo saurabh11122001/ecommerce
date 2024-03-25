@@ -3,7 +3,8 @@ const app=express()
 const expressSession=require('express-session');
 const passport = require('passport');
 const userRouter=require('./Routes/user')
-const userModel=require('./db')
+const productRouter=require('./Routes/products')
+const {userModel}=require('./db')
 var cors=require('cors');
 
 app.use(expressSession({
@@ -18,5 +19,5 @@ passport.deserializeUser(userModel.deserializeUser())
 app.use(cors())
 app.use(express.json());
 app.use('/',userRouter);
- 
+app.use('/',productRouter);
 app.listen(5000);

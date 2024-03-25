@@ -9,8 +9,11 @@ const MyStates=(props)=>{
   const[cart,setCart]=useState(false)
   const[loader,setLoader]=useState(false)
   const[user,setUser]=useState("")
+  const[userDetails,setUserDetials]=useState("Login")
     return (
-        <MyContext.Provider value={{AboutUs,setAboutUs,profile,setProfile,login,setLogin,setRegister,register,cart,setCart,loader,setLoader,user,setUser}}>
+        <MyContext.Provider value={{AboutUs,setAboutUs,profile,setProfile,login,setLogin,setRegister,
+        register,cart,setCart,loader,setLoader,user,setUser,
+        userDetails,setUserDetials}}>
           {props.children}
         </MyContext.Provider>
       )

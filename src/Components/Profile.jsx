@@ -7,7 +7,6 @@ import './profile.css'
 const Profile = () => {
     const context=useContext(MyContext)
     const {setProfile,setLogin,user,setUser}=context;
-   
   return (
     <>
     {<div className='profile-div bg-gray-100  rounded-md my-2 flex flex-col gap-12 w-96 h-full absolute top-0 right-0'>

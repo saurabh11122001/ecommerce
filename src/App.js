@@ -13,6 +13,7 @@ import Profile from './Components/Profile';
 import Login from './Components/Login';
 import Cart from './Components/Cart';
 import Loader from './Components/Loader';
+import Adminlogin from './Components/Adminlogin';
 
 
 function App() {
@@ -36,13 +37,14 @@ function App() {
             <Routes>
               <Route path='/'element={<Home/>}></Route>
               <Route path='/about'element={<About2/>}></Route>
+              <Route path='/admin'element={<Adminlogin/>}></Route>
             </Routes>
             {profile?<Profile/>:''}
             {login?<Login/>:''}
             {cart?<Cart/>:''}
             {loader?<Loader/>:''}
-            <About />
-            <LastPart/>
+              <About />
+              <LastPart/>
           </Router>
           </div>
         </div> 
